@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="Gratuity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="enterBtn" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmw-8l-hWS" customClass="DesignableButton" customModule="Gratuity">
+                                <rect key="frame" x="0.0" y="-290" width="600" height="903"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="903" id="Tis-cc-GL9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="36"/>
+                                <state key="normal" title="          Gratuity">
+                                    <color key="titleColor" red="1" green="0.83921568629999999" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeDown"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="9HP-qg-BRZ" kind="modal" modalTransitionStyle="crossDissolve" id="x8E-i8-hPJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.61176470588235299" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mmw-8l-hWS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Ji-J5-hDm"/>
+                            <constraint firstAttribute="trailing" secondItem="mmw-8l-hWS" secondAttribute="trailing" id="Vhv-U4-lxe"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mmw-8l-hWS" secondAttribute="bottom" constant="-13" id="ttj-e3-Zbw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterBtn" destination="mmw-8l-hWS" id="dKR-88-55Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="420"/>
+        </scene>
+        <!--By Calculation View Controller-->
+        <scene sceneID="XPh-3p-usU">
+            <objects>
+                <viewController id="9HP-qg-BRZ" customClass="ByCalculationViewController" customModule="Gratuity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9da-mn-XhP"/>
+                        <viewControllerLayoutGuide type="bottom" id="ygr-mt-cVk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TTH-L4-Heq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjY-Yh-sJx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.89999997615814209" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Amount" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-Lk-XDG" customClass="DesignableTextField" customModule="Gratuity" customModuleProvider="target">
+                                        <rect key="frame" x="262" y="114" width="298" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="298" id="62e-6V-s7M"/>
+                                            <constraint firstAttribute="height" constant="65" id="iRg-Wp-Rr2"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.94901960780000005" green="0.73725490199999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="60"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.94901960780000005" green="0.73725490199999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCX-yR-ZcU">
+                                        <rect key="frame" x="515" y="41" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="A41-u8-4EB"/>
+                                            <constraint firstAttribute="width" constant="45" id="P9N-gj-z1p"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="icon_256x256_hamburger_gold">
+                                            <color key="titleShadowColor" red="0.85882352939999995" green="0.6705882353" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zzD-Ro-Ju3" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="G4g-hg-6mo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.70709455190000003" green="0.47536673740000002" blue="0.19107698070000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WaU-Lk-XDG" secondAttribute="bottom" constant="21" id="FK8-pc-rMg"/>
+                                    <constraint firstItem="WaU-Lk-XDG" firstAttribute="top" secondItem="DCX-yR-ZcU" secondAttribute="bottom" constant="28" id="LAv-gU-BVN"/>
+                                    <constraint firstItem="WaU-Lk-XDG" firstAttribute="trailing" secondItem="DCX-yR-ZcU" secondAttribute="trailing" id="YaZ-TQ-vUp"/>
+                                    <constraint firstItem="DCX-yR-ZcU" firstAttribute="top" secondItem="BjY-Yh-sJx" secondAttribute="top" constant="41" id="hp5-gz-1mC"/>
+                                    <constraint firstAttribute="trailing" secondItem="DCX-yR-ZcU" secondAttribute="trailing" constant="40" id="kw7-jH-3B3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01q-3b-vzr">
+                                <rect key="frame" x="0.0" y="200" width="600" height="218"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4S-vb-BJ3">
+                                        <rect key="frame" x="507" y="41" width="53" height="60"/>
+                                        <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="60"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.73725490199999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ui-NL-pCw">
+                                        <rect key="frame" x="260" y="152" width="300" height="55"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="61"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.73725490199999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-G4-XWo">
+                                        <rect key="frame" x="258" y="101" width="304" height="31"/>
+                                        <color key="tintColor" red="0.38431372549999998" green="0.24313725489999999" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="7wm-Yp-c2M"/>
+                                        </constraints>
+                                        <color key="minimumTrackTintColor" red="0.94932175370000005" green="0.69584430630000005" blue="0.32993316439999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.53997523479999998" green="0.34411892360000002" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="0.94901960780000005" green="0.73725490199999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="sliderValueDidChange:" destination="9HP-qg-BRZ" eventType="valueChanged" id="fdA-Rw-yHh"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i75-A3-w8m">
+                                        <rect key="frame" x="378" y="47" width="121" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="hxh-ml-3VO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="61"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.73725490199999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.74092899010000002" green="0.49811301149999998" blue="0.20022000449999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="HRy-G4-XWo" secondAttribute="centerY" constant="-7" id="23C-xA-Opu"/>
+                                    <constraint firstItem="HRy-G4-XWo" firstAttribute="top" secondItem="i75-A3-w8m" secondAttribute="bottom" constant="-6" id="2cJ-9s-XQb"/>
+                                    <constraint firstItem="3Ui-NL-pCw" firstAttribute="trailing" secondItem="HRy-G4-XWo" secondAttribute="trailing" id="6zH-pV-WCt"/>
+                                    <constraint firstItem="HRy-G4-XWo" firstAttribute="top" secondItem="B4S-vb-BJ3" secondAttribute="bottom" id="Azc-Ps-3JN"/>
+                                    <constraint firstItem="HRy-G4-XWo" firstAttribute="top" secondItem="i75-A3-w8m" secondAttribute="bottom" constant="-6" id="ByE-Zz-IQK"/>
+                                    <constraint firstAttribute="trailing" secondItem="B4S-vb-BJ3" secondAttribute="trailing" constant="40" id="Cg3-Jv-HSv"/>
+                                    <constraint firstItem="B4S-vb-BJ3" firstAttribute="leading" secondItem="i75-A3-w8m" secondAttribute="trailing" constant="8" symbolic="YES" id="Oog-yL-UDC"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Ui-NL-pCw" secondAttribute="bottom" constant="11" id="VzO-nZ-sRj"/>
+                                    <constraint firstItem="B4S-vb-BJ3" firstAttribute="top" secondItem="01q-3b-vzr" secondAttribute="top" constant="41" id="WPt-a7-11f"/>
+                                    <constraint firstItem="HRy-G4-XWo" firstAttribute="trailing" secondItem="B4S-vb-BJ3" secondAttribute="trailing" id="pV8-Tk-Iex"/>
+                                    <constraint firstItem="i75-A3-w8m" firstAttribute="top" secondItem="01q-3b-vzr" secondAttribute="top" constant="47" id="qsP-tU-LyU"/>
+                                    <constraint firstItem="3Ui-NL-pCw" firstAttribute="top" secondItem="i75-A3-w8m" secondAttribute="bottom" constant="45" id="uyV-us-5p4"/>
+                                    <constraint firstItem="3Ui-NL-pCw" firstAttribute="leading" secondItem="HRy-G4-XWo" secondAttribute="leading" id="w6h-uy-wZ8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oi3-iV-LnY" customClass="DesignableLabel" customModule="Gratuity" customModuleProvider="target">
+                                <rect key="frame" x="249" y="454" width="307" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="7TA-We-Nqq"/>
+                                    <constraint firstAttribute="width" constant="307" id="IxP-ih-aeK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.94559461810000001" blue="0.80611979170000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.61176470588235299" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oi3-iV-LnY" firstAttribute="top" secondItem="01q-3b-vzr" secondAttribute="bottom" constant="36" id="AAa-C5-42w"/>
+                            <constraint firstItem="ygr-mt-cVk" firstAttribute="top" secondItem="oi3-iV-LnY" secondAttribute="bottom" constant="80" id="MNb-Go-lX3"/>
+                            <constraint firstAttribute="centerX" secondItem="01q-3b-vzr" secondAttribute="centerX" id="RYl-7o-FhY"/>
+                            <constraint firstItem="BjY-Yh-sJx" firstAttribute="top" secondItem="TTH-L4-Heq" secondAttribute="top" id="cZu-he-cB4"/>
+                            <constraint firstItem="01q-3b-vzr" firstAttribute="top" secondItem="BjY-Yh-sJx" secondAttribute="bottom" id="ec1-SO-DgN"/>
+                            <constraint firstAttribute="centerX" secondItem="BjY-Yh-sJx" secondAttribute="centerX" id="gh7-Nh-hRA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BjY-Yh-sJx" secondAttribute="trailing" constant="-16" id="mLu-N3-nYB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oi3-iV-LnY" secondAttribute="trailing" constant="28" id="p9O-wk-BSZ"/>
+                            <constraint firstItem="BjY-Yh-sJx" firstAttribute="leading" secondItem="TTH-L4-Heq" secondAttribute="leadingMargin" constant="-16" id="pqa-I4-QP7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="01q-3b-vzr" secondAttribute="trailing" constant="-16" id="qUj-lh-gmY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="WaU-Lk-XDG" id="bit-HN-l3s"/>
+                        <outlet property="grandTotalLabel" destination="oi3-iV-LnY" id="l5m-OV-az9"/>
+                        <outlet property="menuBtn" destination="DCX-yR-ZcU" id="FtO-JG-09F"/>
+                        <outlet property="percentageLabel" destination="i75-A3-w8m" id="nTn-dJ-IqK"/>
+                        <outlet property="percentageSlider" destination="HRy-G4-XWo" id="xH9-nG-HIA"/>
+                        <outlet property="tipAmountLabel" destination="3Ui-NL-pCw" id="Bjr-89-quo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WQ6-ah-Vq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="420"/>
+        </scene>
+        <!--By Service View Controller-->
+        <scene sceneID="kvz-hk-PnG">
+            <objects>
+                <viewController id="zzD-Ro-Ju3" customClass="ByServiceViewController" customModule="Gratuity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x1d-Cb-5Ef"/>
+                        <viewControllerLayoutGuide type="bottom" id="92Q-m8-neS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kF5-wO-Iey">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lt9-Js-mhs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yv0-oQ-2EO" customClass="DesignableView" customModule="Gratuity">
+                                <rect key="frame" x="-7" y="0.0" width="335" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LBo-3h-crD">
+                                        <rect key="frame" x="49" y="185" width="60" height="61"/>
+                                        <state key="normal" title="Button" image="icon_256x256 maid">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="housekeepingValueBtn:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="8y6-hB-rxg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVE-tF-eK8">
+                                        <rect key="frame" x="49" y="258" width="60" height="60"/>
+                                        <state key="normal" title="Button" image="icon_256x256 waiter">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clj-92-B8l">
+                                        <rect key="frame" x="47" y="326" width="60" height="60"/>
+                                        <state key="normal" title="Button" image="icon_256x256 bartender">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPf-V1-qvU">
+                                        <rect key="frame" x="47" y="394" width="60" height="59"/>
+                                        <state key="normal" title="Button" image="icon_256x256 bellhop">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frl-qf-fiz">
+                                        <rect key="frame" x="47" y="461" width="60" height="60"/>
+                                        <state key="normal" title="Button" image="icon_256x256 manicure">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtE-e8-DI4">
+                                        <rect key="frame" x="49" y="520" width="60" height="59"/>
+                                        <state key="normal" title="Button" image="icon_256x256 delivery">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipping Guide" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ww-8u-1ad">
+                                        <rect key="frame" x="47" y="41" width="209" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="26"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taxi: %15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZd-JM-qTC">
+                                        <rect key="frame" x="137" y="136" width="209" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Housekeeping: $2 per room" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEs-qn-Jhk">
+                                        <rect key="frame" x="137" y="202" width="135" height="42"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Service: %20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLQ-p8-HhS">
+                                        <rect key="frame" x="137" y="276" width="209" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manicurist: %15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-un-o5E">
+                                        <rect key="frame" x="137" y="477" width="209" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bag Handler: $1 per bag" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1z-nR-Uw3">
+                                        <rect key="frame" x="137" y="406" width="124" height="42"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="for minimum service" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdH-nq-vkX">
+                                        <rect key="frame" x="47" y="66" width="182" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y54-pg-CPk" customClass="DesignableButton" customModule="Gratuity" customModuleProvider="target">
+                                        <rect key="frame" x="247" y="41" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="VCe-qf-gdJ"/>
+                                            <constraint firstAttribute="height" constant="50" id="sFS-4u-D62"/>
+                                        </constraints>
+                                        <state key="normal" title="X" image="icon_256x256 cancel">
+                                            <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="0eM-B9-2lg" kind="unwind" unwindAction="unwindToViewController:" id="kgo-tO-Dzj"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bartender: %15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXF-mA-yUd">
+                                        <rect key="frame" x="137" y="344" width="209" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnW-So-zz5">
+                                        <rect key="frame" x="54" y="122" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="icon_256x256 taxi">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="taxiValueBtn:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="qfw-Az-g8b"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delivery: %10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEC-9A-WJp">
+                                        <rect key="frame" x="137" y="542" width="209" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.61176470589999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="y54-pg-CPk" firstAttribute="leading" secondItem="yv0-oQ-2EO" secondAttribute="leading" constant="247" id="DzO-aY-kfj"/>
+                                    <constraint firstAttribute="height" constant="600" id="JeW-2S-r20"/>
+                                    <constraint firstAttribute="width" constant="350" id="MsJ-ZF-usr"/>
+                                    <constraint firstAttribute="trailing" secondItem="y54-pg-CPk" secondAttribute="trailing" constant="38" id="TEh-Jz-XZb"/>
+                                    <constraint firstItem="y54-pg-CPk" firstAttribute="top" secondItem="yv0-oQ-2EO" secondAttribute="top" constant="41" id="b1u-Yi-1UT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JeW-2S-r20"/>
+                                        <exclude reference="MsJ-ZF-usr"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lt9-Js-mhs" secondAttribute="centerX" id="1eO-ps-WAJ"/>
+                            <constraint firstAttribute="centerY" secondItem="lt9-Js-mhs" secondAttribute="centerY" id="800-J9-97m"/>
+                            <constraint firstItem="lt9-Js-mhs" firstAttribute="leading" secondItem="kF5-wO-Iey" secondAttribute="leading" id="NSS-sG-4u3"/>
+                            <constraint firstItem="lt9-Js-mhs" firstAttribute="bottom" secondItem="92Q-m8-neS" secondAttribute="top" id="SLq-BX-04F"/>
+                            <constraint firstItem="lt9-Js-mhs" firstAttribute="bottom" secondItem="yv0-oQ-2EO" secondAttribute="bottom" id="bfH-Zi-4SI"/>
+                            <constraint firstItem="lt9-Js-mhs" firstAttribute="top" secondItem="yv0-oQ-2EO" secondAttribute="top" id="gyh-nR-LDr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bagHandler" destination="fPf-V1-qvU" id="jy8-q3-0m1"/>
+                        <outlet property="bartender" destination="clj-92-B8l" id="hwQ-iJ-YlS"/>
+                        <outlet property="delivery" destination="qtE-e8-DI4" id="MET-X4-BWJ"/>
+                        <outlet property="housekeeping" destination="LBo-3h-crD" id="9jH-tB-8rO"/>
+                        <outlet property="manicurist" destination="frl-qf-fiz" id="8ia-53-klT"/>
+                        <outlet property="tableService" destination="kVE-tF-eK8" id="nPZ-Kv-XNW"/>
+                        <outlet property="taxi" destination="yv0-oQ-2EO" id="csV-Mh-K2s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BnC-Xv-xCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0eM-B9-2lg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="420"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_256x256 bartender" width="256" height="256"/>
+        <image name="icon_256x256 bellhop" width="256" height="256"/>
+        <image name="icon_256x256 cancel" width="256" height="256"/>
+        <image name="icon_256x256 delivery" width="256" height="256"/>
+        <image name="icon_256x256 maid" width="256" height="256"/>
+        <image name="icon_256x256 manicure" width="256" height="256"/>
+        <image name="icon_256x256 taxi" width="256" height="256"/>
+        <image name="icon_256x256 waiter" width="256" height="256"/>
+        <image name="icon_256x256_hamburger_gold" width="256" height="256"/>
+    </resources>
+</document>
