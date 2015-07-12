@@ -1,7 +1,7 @@
 # Gratuity 
-Tip Calculator
 
-This is an iOS demo for an app that calculates tips using a slider UI.
+Tip Calculator:
+An iOS app that calculates tips using a UI slider.
 
 Total Time Spent: 
   * [x] 15-20 hours 
