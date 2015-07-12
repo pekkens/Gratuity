@@ -1,12 +1,12 @@
 # Gratuity 
 Tip Calculator
 
-This is an iOS demo application for calculating tips using a slider UI
+This is an iOS demo for an app that calculates tips using a slider UI.
 
-Time spent: 15-20 hours spent in total
+Total Time Spent: 
+  * [x] 15-20 hours 
 
 Completed:
-
   * [x] Required: User can enter a bill amount and calculate any tip percentage from %1-%100
  
   * [x] Optional: Created animated splash page with sound effect
