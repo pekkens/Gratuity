@@ -16,6 +16,6 @@ Completed:
 
 ![Video Walkthrough](https://cloud.githubusercontent.com/assets/9056938/8636841/41d2e5e4-282b-11e5-849f-eeaa7333b959.gif)
 
-Spring Library used with permission; Copyright (c) 2014-2015 Meng To (meng@designcode.io)
+Spring Library; Copyright (c) 2014-2015 Meng To (meng@designcode.io)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
