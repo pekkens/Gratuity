@@ -7,11 +7,11 @@ Time spent: 15-20 hours spent in total
 
 Completed:
 
- Required: User can enter a bill amount and calculate any tip percentage from %1-%100
+  * [x] Required: User can enter a bill amount and calculate any tip percentage from %1-%100
  
- Optional: Created animated splash page with sound effect
+  * [x] Optional: Created animated splash page with sound effect
  
- Optional: User has the option of setting tip amount by type of service  
+  * [x] Optional: User has the option of setting tip amount by type of service  
 
 
 ![Video Walkthrough](https://cloud.githubusercontent.com/assets/9056938/8636841/41d2e5e4-282b-11e5-849f-eeaa7333b959.gif)
