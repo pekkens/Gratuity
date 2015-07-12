@@ -14,6 +14,8 @@ Completed:
  Optional: User has the option of setting tip amount by type of service  
 
 
+![Video Walkthrough](gratuity.gif)
+
 Spring Library used with permission; Copyright (c) 2014-2015 Meng To (meng@designcode.io)
 
-GIF created with LiceCap.
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
