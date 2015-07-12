@@ -12,7 +12,20 @@ import UIKit
 class ByCalculationViewController: UIViewController, ByServiceViewControllerDelegate {
     func byServiceViewControllerDidChangeValue(viewController: ByServiceViewController, value: Float) {
         percentageSlider.setValue(value, animated: true)
-        percentageLabel.text = "\(value)"
+        
+        var valueForDisplay = String(format: "%.0f", value)
+        var valueFromBtnPressed = value / 100
+    
+        var amountEntered = NSString(string: amountTextField.text).floatValue
+     
+        var sumOfAmountAndTip = valueFromBtnPressed * amountEntered
+        var sumOfAmountAndTipString = String(format: "+%.2f", sumOfAmountAndTip)
+        
+        var grandTotal = sumOfAmountAndTip + amountEntered
+        
+        percentageLabel.text = "\(valueForDisplay)"
+        tipAmountLabel.text = "\(sumOfAmountAndTipString)"
+        grandTotalLabel.text = String(format: "$%.2f", grandTotal)
         
     }
     
@@ -31,13 +44,15 @@ class ByCalculationViewController: UIViewController, ByServiceViewControllerDele
     
     // Mark: Actions
     
+    @IBOutlet weak var menuBtn: UIButton!
+    
     
     @IBAction func sliderValueDidChange(sender: UISlider) {
          
         var valueFromSlider = Int(sender.value)
-        var valueFromSliderDouble = Double(valueFromSlider) / 100
+        var valueFromSliderDouble = Float(valueFromSlider) / 100
         
-        var amountEntered = NSString(string: amountTextField.text).doubleValue
+        var amountEntered = NSString(string: amountTextField.text).floatValue
         
         var sumOfAmountAndTip = valueFromSliderDouble * amountEntered
         var sumOfAmountAndTipString = String(format: "+%.2f", sumOfAmountAndTip)
@@ -50,11 +65,12 @@ class ByCalculationViewController: UIViewController, ByServiceViewControllerDele
         
     }
     
-    @IBOutlet weak var menuBtn: UIButton!
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let byServiceViewController = segue.destinationViewController as! ByServiceViewController
         byServiceViewController.delegate = self
+        
     }
     
     override func viewDidLoad() {
@@ -63,22 +79,8 @@ class ByCalculationViewController: UIViewController, ByServiceViewControllerDele
         self.view.addGestureRecognizer(tapRecognizer)
     }
     
-    
     func didTapView(){
         self.view.endEditing(true)
-    }
-    
-    // MARK: ByServiceViewController Delegate
-    
-    func taxiButtonPressed(UIButton: ByServiceViewController, sender: AnyObject) {
-        var taxiTipValue = 0.15
-        println(taxiTipValue)
-    }
-    
-    func housekeepingButtonPressed(UIButton: ByServiceViewController, sender: AnyObject) {
-        var housekeepingTip = 3
-        
-        grandTotalLabel.text = "\(housekeepingTip)"
     }
     
 }

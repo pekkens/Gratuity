@@ -29,13 +29,38 @@ class ByServiceViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func taxiValueBtn(sender: AnyObject) {
-        delegate?.byServiceViewControllerDidChangeValue(self, value: 15.0)
-        println(0.15)
+        delegate?.byServiceViewControllerDidChangeValue(self, value: 15)
+    
     }
     
-    @IBAction func housekeepingValueBtn(sender: AnyObject) {
-        delegate?.byServiceViewControllerDidChangeValue(self, value: 10.0)
-        println(0.10)
+    @IBAction func housekeeperValueBtn(sender: AnyObject) {
+        delegate?.byServiceViewControllerDidChangeValue(self, value: 5)
+
+    }
+    
+    @IBAction func waitStaffValueBtn(sender: AnyObject) {
+        delegate?.byServiceViewControllerDidChangeValue(self, value: 20)
+   
+    }
+    
+    @IBAction func bartenderValueBtn(sender: AnyObject) {
+        delegate?.byServiceViewControllerDidChangeValue(self, value: 15)
+        
+    }
+    
+    @IBAction func petServicesValueBtn(sender: AnyObject) {
+        delegate?.byServiceViewControllerDidChangeValue(self, value: 15)
+        
+    }
+    
+    @IBAction func salonValueBtn(sender: AnyObject) {
+        delegate?.byServiceViewControllerDidChangeValue(self, value: 15)
+        
+    }
+    
+    @IBAction func deliveryValueBtn(sender: AnyObject) {
+        delegate?.byServiceViewControllerDidChangeValue(self, value: 10)
+        
     }
     
     override func viewDidLoad() {
