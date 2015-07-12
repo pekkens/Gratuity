@@ -9,7 +9,7 @@ Total Time Spent:
 Completed:
   * [x] Required: User can enter a bill amount and calculate any tip percentage from %1-%100
  
-  * [x] Optional: Created animated splash page with sound effect
+  * [x] Optional: Created animated splash page with sound effect of coin dropping 
  
   * [x] Optional: User has the option of setting tip amount by type of service  
 
