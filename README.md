@@ -16,7 +16,7 @@ Completed:
 
 Visual Walkthrough:
 
-![Video Walkthrough](https://cloud.githubusercontent.com/assets/9056938/8636841/41d2e5e4-282b-11e5-849f-eeaa7333b959.gif)
+![Video Walkthrough](https://cloud.githubusercontent.com/assets/9056938/8636922/a0baf49a-282e-11e5-866f-f4e760966366.gif)
 
 Spring Animation Library; Copyright (c) 2014-2015 Meng (https://github.com/MengTo/Spring)
 
