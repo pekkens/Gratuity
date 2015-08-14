@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
 protocol ByServiceViewControllerDelegate: class {
     func byServiceViewControllerDidChangeValue(viewController: ByServiceViewController, value: Float)
@@ -61,6 +62,13 @@ class ByServiceViewController: UIViewController {
     @IBAction func deliveryValueBtn(sender: AnyObject) {
         delegate?.byServiceViewControllerDidChangeValue(self, value: 10)
         
+    }
+    
+    var locationManager = CLLocationManager()
+    
+    @IBAction func locButton(sender: AnyObject) {
+        locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+        locationManager.startUpdatingLocation()
     }
     
     override func viewDidLoad() {

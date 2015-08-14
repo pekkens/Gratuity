@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 
 class ByCalculationViewController: UIViewController, ByServiceViewControllerDelegate {
@@ -29,6 +30,8 @@ class ByCalculationViewController: UIViewController, ByServiceViewControllerDele
         
     }
     
+
+    
     
     // MARK: Inputs
     
@@ -47,7 +50,7 @@ class ByCalculationViewController: UIViewController, ByServiceViewControllerDele
     @IBOutlet weak var menuBtn: UIButton!
     
     
-    @IBAction func sliderValueDidChange(sender: UISlider) {
+    @IBAction func sliderValueDidChange(sender: UISlider){
          
         var valueFromSlider = Int(sender.value)
         var valueFromSliderDouble = Float(valueFromSlider) / 100
@@ -65,7 +68,6 @@ class ByCalculationViewController: UIViewController, ByServiceViewControllerDele
         
     }
     
-
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let byServiceViewController = segue.destinationViewController as! ByServiceViewController

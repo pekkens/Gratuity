@@ -236,6 +236,7 @@
                                         </state>
                                         <connections>
                                             <action selector="housekeeperValueBtn:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="T6P-PI-iQr"/>
+                                            <action selector="locButton:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="LvQ-uT-Aq9"/>
                                             <segue destination="0eM-B9-2lg" kind="unwind" unwindAction="unwindToViewController:" id="BM7-Ka-4z1"/>
                                         </connections>
                                     </button>
@@ -246,6 +247,7 @@
                                         </state>
                                         <connections>
                                             <action selector="bartenderValueBtn:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="LW2-nE-Lxi"/>
+                                            <action selector="locButton:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="44D-JY-AQP"/>
                                             <segue destination="0eM-B9-2lg" kind="unwind" unwindAction="unwindToViewController:" id="Ft5-2D-14n"/>
                                         </connections>
                                     </button>
@@ -255,6 +257,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="locButton:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="SH8-7K-V1C"/>
                                             <action selector="petServicesValueBtn:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="NeM-PY-iBl"/>
                                             <segue destination="0eM-B9-2lg" kind="unwind" unwindAction="unwindToViewController:" id="aWp-I2-jCQ"/>
                                         </connections>
@@ -265,6 +268,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="locButton:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="5Dr-1A-4si"/>
                                             <action selector="salonValueBtn:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="VxX-uq-jiP"/>
                                             <segue destination="0eM-B9-2lg" kind="unwind" unwindAction="unwindToViewController:" id="yEi-8k-hvN"/>
                                         </connections>
@@ -276,6 +280,7 @@
                                         </state>
                                         <connections>
                                             <action selector="deliveryValueBtn:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="LdB-SG-1pY"/>
+                                            <action selector="locButton:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="XbI-28-l8Q"/>
                                             <segue destination="0eM-B9-2lg" kind="unwind" unwindAction="unwindToViewController:" id="zId-c2-O4o"/>
                                         </connections>
                                     </button>
@@ -352,6 +357,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="locButton:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="0WI-Fq-MGp"/>
                                             <action selector="taxiValueBtn:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="qfw-Az-g8b"/>
                                             <segue destination="0eM-B9-2lg" kind="unwind" unwindAction="unwindToViewController:" id="H0z-kZ-xs8"/>
                                         </connections>
@@ -374,6 +380,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="locButton:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="f0d-Tu-unf"/>
                                             <action selector="waitStaffValueBtn:" destination="zzD-Ro-Ju3" eventType="touchUpInside" id="u4X-hw-4tL"/>
                                             <segue destination="0eM-B9-2lg" kind="unwind" unwindAction="unwindToViewController:" id="v5T-xx-Xhd"/>
                                         </connections>
