@@ -14,7 +14,7 @@ Completed:
   * [x] Optional: User has the option of setting tip amount by type of service  
   
 Still ToDo:
-  * [ ] Add feature so tip percent values automatically update depending on country
+  * [ ] Add feature so tip percent values automatically update depending on location
 
 
 Visual Walkthrough:
