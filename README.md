@@ -4,7 +4,7 @@ Tip Calculator:
   * [x] An iOS app that calculates tips using a UI slider.
 
 Total Time Spent: 
-  * [x] 15-20 hours 
+  * [x] 15-20 hours after rebuild
 
 Completed:
   * [x] Required: User can enter a bill amount and calculate any tip percentage from %1-%100
