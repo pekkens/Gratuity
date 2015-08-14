@@ -14,7 +14,7 @@ protocol ByServiceViewControllerDelegate: class {
     func byServiceViewControllerDidChangeValue(viewController: ByServiceViewController, value: Float)
 }
 
-class ByServiceViewController: UIViewController {
+class ByServiceViewController: UIViewController, CLLocationManagerDelegate {
     // MARK: Outlets
     
     @IBOutlet weak var taxi: UIButton!
@@ -67,9 +67,13 @@ class ByServiceViewController: UIViewController {
     var locationManager = CLLocationManager()
     
     @IBAction func locButton(sender: AnyObject) {
+        locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
         locationManager.startUpdatingLocation()
+        locationManager.startMonitoringSignificantLocationChanges()
     }
+    
+    //TODO: create a method that once service type button is pressed will change percent value depending on location
     
     override func viewDidLoad() {
         super.viewDidLoad()

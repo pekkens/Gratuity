@@ -29,8 +29,8 @@ class ByCalculationViewController: UIViewController, ByServiceViewControllerDele
         grandTotalLabel.text = String(format: "$%.2f", grandTotal)
         
     }
-    
 
+    //TODO: create function to update labels once any action is taken, not just slider.
     
     
     // MARK: Inputs
